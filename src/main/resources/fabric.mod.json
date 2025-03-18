@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "santis-great-mod",
+	"version": "${version}",
+	"name": "Santi's Great Mod",
+	"description": "My great attempt at actually minecraft modding",
+	"authors": [
+		"Santi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/santis-great-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"santi.sgm.SantisGreatMod"
+		],
+		"fabric-datagen": [
+			"santi.sgm.SantisGreatModDataGenerator"
+		],
+		"client": [
+			"santi.sgm.SantiModClient"
+		]
+	},
+	"mixins": [
+		"santis-great-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
