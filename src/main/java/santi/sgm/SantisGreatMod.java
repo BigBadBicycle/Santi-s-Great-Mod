@@ -15,5 +15,6 @@ public class SantisGreatMod implements ModInitializer {
 	public void onInitialize() {
 
 		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("please work!");
 	}
 }
